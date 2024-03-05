@@ -1,1 +1,1 @@
-## [Personal Website](https://balajkhalid.github.io)
+*[Personal Website](https://balajkhalid.github.io)*
