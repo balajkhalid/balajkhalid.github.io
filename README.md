@@ -1,2 +1,1 @@
-##-[Personal Website](https://balajkhalid.github.io)
-[Personal Website](#1-https://balajkhalid.github.io)
+[https://balajkhalid.github.io](#1-this-is-my-header)
