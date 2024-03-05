@@ -1,1 +1,1 @@
-## Balaj Khalid Personal Website ##
+**[Personal Website](https://balajkhalid.github.io)**
