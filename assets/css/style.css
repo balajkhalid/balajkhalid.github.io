@@ -607,6 +607,19 @@ main {
   overflow: hidden;
 }
 
+.testimonials-date {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
 
 /**
  * #testimonials-modal
@@ -787,7 +800,21 @@ main {
 
 .timeline-item { position: relative; }
 
+.timeline-item-h { 
+  position: relative;
+  color: var(--light-gray)
+}
+
+.timeline-item-tech { 
+  position: relative;
+  color: var(--light-gray)
+}
+
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item-h:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item-tech:not(:last-child) { margin-bottom: 5px; }
 
 .timeline-item-title {
   font-size: var(--fs-6);
@@ -818,6 +845,30 @@ main {
 }
 
 .timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-item-h::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-item-tech::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1452,6 +1503,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     -webkit-line-clamp: 2;
   }
 
+  .testimonials-date {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
   /* testimonials modal */
 
   .modal-container { padding: 20px; }
@@ -1506,6 +1562,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-item:not(:last-child)::before { left: -40px; }
 
   .timeline-item::after {
+    height: 8px;
+    width: 8px;
+    left: -43px;
+  }
+
+  .timeline-item-h:not(:last-child)::before { left: -40px; }
+
+  .timeline-item-h::after {
+    height: 8px;
+    width: 8px;
+    left: -43px;
+  }
+
+  .timeline-item-tech:not(:last-child)::before { left: -40px; }
+
+  .timeline-item-tech::after {
     height: 8px;
     width: 8px;
     left: -43px;
