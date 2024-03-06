@@ -542,7 +542,8 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img {
+  margin: auto; }
 
 .service-content-box { text-align: center; }
 
@@ -762,12 +763,23 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
+  width: 200px;
+  height: 200px;
+  filter: grayscale(0);
   transition: var(--transition-1);
+  display: block;
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+/*
+.clients-item img{
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+*/
+
+/* image color
+/* .clients-item img:hover { filter: grayscale(0); } */
 
 
 
@@ -1543,13 +1555,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* clients */
 
   .clients-list {
-    gap: 50px;
+    gap: 20px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .clients-item { 
+    min-width: calc(33.33% - 35px);
+  }
 
 
 
