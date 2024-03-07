@@ -775,7 +775,7 @@ main {
 
 @media (max-width: 768px) {
   .clients-item img{
-      padding-right: 80px; /* Adds padding to the right of each image */
+      padding-right: 120px; /* Adds padding to the right of each image */
       width: 200px;
       height: 200px;
       filter: grayscale(0);
