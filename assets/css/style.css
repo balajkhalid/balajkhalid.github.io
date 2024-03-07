@@ -1762,16 +1762,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .get-in-touch {
-    color: var(--light-gray) !important;
+    color: var(--light-gray);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
-    align-items: center;
-    text-align: left;
-    margin-bottom: 40px;
   }
   
   .get-in-touch p { margin-bottom: 15px; }
+
+  .get-in-touch { margin-bottom: 40px;}
   
 }
 
