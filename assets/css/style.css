@@ -68,6 +68,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --off-white: #d4d4d4;
 
   /**
    * typography
@@ -332,7 +333,8 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  /* background: var(--bg-gradient-onyx); */
+  background: var(--off-white);
   border-radius: 20px;
 }
 
@@ -763,11 +765,32 @@ main {
 }
 
 .clients-item img {
+  padding-right: 10px;
   width: 200px;
   height: 200px;
   filter: grayscale(0);
   transition: var(--transition-1);
-  display: block;
+  display: border-box;
+}
+
+@media (max-width: 768px) {
+  .clients-item img{
+      padding-right: 50px; /* Adds padding to the right of each image */
+      width: 200px;
+      height: 200px;
+      filter: grayscale(0);
+      transition: var(--transition-1);
+      box-sizing: border-box;/* Ensures padding is included in the width calculation */
+  }
+
+  .clients-item:last-child img {
+      padding-right: 0; /* Removes padding for the last image to avoid extra space on the right */
+      width: 200px;
+      height: 200px;
+      filter: grayscale(0);
+      transition: var(--transition-1);
+      box-sizing: border-box;
+  }
 }
 
 /*
@@ -1415,7 +1438,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; border-radius: 30px; }
 
   .info-content .name { margin-bottom: 15px; }
 
