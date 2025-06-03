@@ -1,1282 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Balaj Khalid</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="icon" href="./assets/images/favicon_io/favicon-32x32.png" type="image/x-type">
-  <link rel="apple-touch-icon" sizes="180x180" href=".assets/images/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href=".assets/images/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href=".assets/images/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href=".assets/images/favicon_io/site.webmanifest">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaj Khalid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/balaj-khalid-removebg-3.png" alt="Balaj Khalid" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Balaj Khalid</h1>
-
-          <p class="title">Data Scientist</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">bkhalid@usc.edu</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (323) 220-3691</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 10, 1998</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Los Angeles, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/balaj-khalid/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/balajkhalid" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Balaj Khalid, a passionate and driven graduate student from Karachi, Pakistan, currently pursuing a Master's in Computer Science with a specialization in Artificial Intelligence at the University of Southern California. My journey in the tech world has been both enriching and challenging, having previously honed my skills as a Data Scientist at Afiniti for over two years. At Afiniti, I employed state-of-the-art machine learning models to enhance customer experience by optimizing runtime agent and caller pairing, boosting significant revenue generation for our clients.
-          </p>
-
-          <p>
-            My passion lies in dissecting and understanding complex patterns in data. I thrive on the challenge of capturing these nuances and training models to distill valuable insights from them. This drive stems from a deep-seated belief in the power of data to not just predict the future but to mold it. As I continue my academic and professional journey, I remain committed to pushing the boundaries of what's possible in AI, driven by a vision to innovate and transform industries through the lens of machine learning.
-          </p>
-
-          <p>
-            In my spare time, I enjoy exploring new and emerging technologies, as well as developing Shopify stores and iOS apps.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/data-cleaning.svg
-                " alt="data cleaning icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Cleaning and Preprocessing</h4>
-
-                <p class="service-item-text">
-                  Executing meticulous data refinement and preprocessing techniques to ensure the integrity and quality of the dataset.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/exploratory-analysis.svg" alt="exploratory analysis icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Exploratory Data Analysis</h4>
-
-                <p class="service-item-text">
-                  Conducting comprehensive exploratory analyses to extract meaningful patterns, trends, and insights, laying the groundwork for informed decision-making.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/model-development.svg" alt="model development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Model Development and Evaluation</h4>
-
-                <p class="service-item-text">
-                  Developing sophisticated models tailored to the project's needs, followed by rigorous evaluation to ascertain performance and reliability.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/model-deployment.svg" alt="model deployment icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Model Deployment</h4>
-
-                <p class="service-item-text">
-                  Implementing robust deployment strategies to seamlessly integrate models. facilitating real-time decision support and actionable intelligence.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - Languages
-        -->
-        <!--
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Languages and Tools</h3>
-          <br>
-
-            <ol class="timeline-langs has-scrollbar">
-
-            <li class="timeline-item-tech">Languages:</li>          
-            <p align="left">
-            &emsp;
-            &emsp;
-              <img src="https://skillicons.dev/icons?i=py,r,swift,cpp,java,javascript,julia,dart,html,css,latex,matlab&theme=light" />
-            </p>
-
-            <br>
-
-            <li class="timeline-item-tech">Frameworks:</li>          
-            <p align="left">
-              &emsp;
-              &emsp;
-                <img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg" width="48", height="48" style="float:left; align-items: flex-end;"/>
-                <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,nodejs,vuejs&theme=light" />
-            </p>
-
-            <br>
-
-            <li class="timeline-item-tech">Databases:</li>          
-              <p align="left">
-                &emsp;
-                &emsp;
-                  <img src="https://skillicons.dev/icons?i=mysql,postgresql&theme=light" />
-              </p>
-            
-            <br> 
-              <li class="timeline-item-tech">Cloud Servers:</li>          
-              <p align="left">
-                &emsp;
-                &emsp;
-                  <img src="https://skillicons.dev/icons?i=aws,gcp,firebase&theme=light" />
-              </p>
-            <br>
-
-              <li class="timeline-item-tech">Tools:</li>          
-              <p align="left">
-                &emsp;
-                &emsp;
-                  <img src="https://skillicons.dev/icons?i=anaconda,git,github,docker,vscode,linux,figma,xd&theme=light" />
-              </p>    
-            </ol>
-
-          <br><br>
-        </section>
-      -->
-
-         <!--
-          - Affiliated Institutions
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Affiliated Institutions</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/white-lums.png" alt="lums logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/white-usc.jpeg" alt="USC logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/afiniti.jpg" alt="afiniti logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - Recommendations
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Recommendations</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Tayyaba Ayub" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tayyaba Ayub</h4>
-
-                <time class= "testimonials-date" datetime="2021-06-14">20 December, 2023</time>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-
-              </div>
-            </li> -->
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Kinza Yousaf" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kinza Yousaf</h4>
-
-                <time class= "testimonials-date" datetime="2021-06-14">18 Feb, 2023</time>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Throughout the past two years, Balaj has been an invaluable friend and colleague, consistently demonstrating unwavering support and a willingness to lend a hand at any hour. His profound understanding of internal processes, coupled with his adeptness in navigating new client engagements, has been pivotal in our success with new ventures. Notably, Balaj exhibits a proactive stance towards embracing new technologies, improvements, and tools, often leading the charge. His proactive attitude not only renders him highly knowledgeable but also distinguishes him as a team player, readily offering assistance to others, thus setting him apart.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Muhammad Haris" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Muhammad Haris</h4>
-
-                <time class= "testimonials-date" datetime="2021-06-14">09 July, 2023</time>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Balaj has been an extraordinary mentor, friend, and colleague throughout my tenure at Afiniti. He embodies a beacon of inspiration and guidance I have continually looked up to. His remarkable work ethic, paired with an unwavering dedication to fostering growth and understanding among peers, sets him apart. Balaj possesses a unique ability to distill complex information into accessible, bite-sized pieces, making collaboration and learning from him exceptionally beneficial. His approachability and readiness to assist others not only enhance our work environment but also contribute significantly to our collective success and individual development.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-5.png" alt="Abdullah Iqbal" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Abdullah Iqbal</h4>
-
-                <time class= "testimonials-date" datetime="2021-06-14">25 September, 2023</time>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I highly commend Balaj for his exceptional teamwork and work ethics. Despite our roles on separate teams, Balaj has consistently demonstrated his reliability and expertise whenever I faced challenges. His profound knowledge of Afiniti's technologies has been instrumental, providing invaluable support. Balaj's unwavering dedication and eagerness to assist reflect a true commitment to excellence, making it an absolute privilege to collaborate with him.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-        <!--
-          - Recommendation modal
-        -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 June, 2021</time>
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Southern California</h4>
-              <h5 class="h5 timeline-item-subtitle">Masters in Computer Science - Artificial Intelligence</h5>
-
-              <span>Jan 2024 - Dec 2025</span>
-
-              <p class="timeline-text">
-                Relevant course work: Artificial Intelligence, Machine Learning, NLP, Databases, Web Technologies, and Algorithms.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Lahore University of Management Sciences</h4>
-              <h5 class="h5 timeline-item-subtitle">Bachelors in Computer Science</h5>
-
-              <span>Sept 2017 - Jun 2021</span>
-
-              <p class="timeline-text">
-                Relevant course work: Artificial Intelligence, Machine Learning, Data Science, Data Structures and Algorithms, Advanced Programming, Probability, Statistics, Linear Algebra, and Calculus.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Grader, Statistics and Data Science for Business</h4>
-              <h5 class="h5 timeline-item-subtitle">University of Southern California</h5>
-
-              <span>Sept 2024 - Dec 2024</span>
-
-              <p class="timeline-text">
-                <ul>
-                  <li class = "timeline-sublist">Evaluated and graded statistical assignments using R, ensuring accuracy, consistency, and alignment with course objectives.</li>
-                  <li class = "timeline-sublist">Developed grading rubrics and coordinated with the professor and TA to maintain fair and transparent assessment standards.</li>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">BK</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Data Scientist II</h4>
-              <h5 class="h5 timeline-item-subtitle">Afiniti</h5>
-
-              <span>Feb 2023 - Dec 2023</span>
-
-              <p class="timeline-text">
-                <ul>
-                  <li class = "timeline-sublist">Reduced model deployment time by 30% and enhanced operational efficiency by designing and automating a full-cycle MLOps pipeline, including raw data ingestion, transformation, model training, deployment, and monitoring.</li>
-                  <li class = "timeline-sublist">Enhanced productivity and efficiency by mentoring and leading a team of three in data analysis, predictive modeling, and production monitoring, fostering a high-performance culture.</li>
-                  <li class = "timeline-sublist">Achieved a 9% reduction in customer churn and generated €2M in additional revenue for Telefonica Spain by optimizing churn prediction models with advanced gradient boosting techniques (XGBoost, LightGBM).</li>
-                  <li class = "timeline-sublist">Increased data processing efficiency and contributed to €1M in incremental revenue by developing a real-time customer interaction tracking system using R, PostgreSQL, and automated ETL workflows with Talend.</li>
-                </ul>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Data Scientist I</h4>
-              <h5 class="h5 timeline-item-subtitle">Afiniti</h5>
-
-              <span>Jun 2021 — Feb 2023</span>
-
-              <ul>
-                  <li class = "timeline-sublist">Generated €9.7M in additional revenue by successfully onboarding Telefonica Spain as a strategic client and designing real-time predictive modeling to optimize agent-caller pairing.</li>
-                  <li class = "timeline-sublist">Increased model interpretability and predictive accuracy, leading to $0.8M in additional annual revenue, by engineering domain-specific ML features tailored to business needs.</li>
-                  <li class = "timeline-sublist">Saved $0.5M in revenue by developing a real-time production monitoring and data integrity dashboard using Apache Superset, enabling proactive anomaly detection and preventing costly errors.</li>
-              </ul>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Teaching Assistant, Computational Problem Solving</h4>
-              <h5 class="h5 timeline-item-subtitle">Lahore University of Management Sciences</h5>
-
-              <span>Sept 2019 — Dec 2019</span>
-
-              <ul>
-                  <li class = "timeline-sublist">Led a team of 10 teaching assistants to manage 100+ students</li>
-                  <li class = "timeline-sublist">Designed lab assignments and auto-graders to ensure consistency in grading standards and a positive learning experience for 100+ students</li>
-              </ul>
-
-            </li>
-          
-          </ol>
-
-        </section>
-
-        <section class ="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="settings"></ion-icon>
-            </div>
-
-            <h3 class="h3">Technical Skills</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item-tech"><strong>Languages:</strong> Python, R, Swift, C/C++, Java, JavaScript, Julia, Dart, HTML, CSS, Latex, MATLAB</li>
-            <li class="timeline-item-tech"><strong>Machine Learning & AI:</strong> LLMs, RAG, LangChain, PyTorch, Scikit-learn, TensorFlow, Pandas, NumPy, Spark</li>
-            <li class="timeline-item-tech"><strong>Big Data and Cloud:</strong> Google Cloud Platform (GCP), Amazon Web Services (AWS), Docker, Kubernetes, Apache Superset</li>
-            <li class="timeline-item-tech"><strong>Tools & Frameworks:</strong>Git, Jenkins, Airflow, Talend, PostgresSQL, MySQL, MongoDB</li>
-           </ol> 
-
-        </section>
-
-        <section class ="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="cube"></ion-icon>
-            </div>
-
-            <h3 class="h3">Projects</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item-h">
-
-              <!-- <h4 class="h4 timeline-item-title">University of Southern California</h4> -->
-              <h5 class="h5 timeline-item-subtitle">Exploring the use of Large Language Models (LLMs) in Social Media Bot Detection</h5>
-
-              <span>Sept 2024 - Dec 2024</span>
-
-              <p>Achieved 0.83 accuracy and 0.74 F1-score in bot detection on X (formerly Twitter) by developing an LLM-based classifier
-                using Llama 3.1 and the Twibot-22 dataset, leveraging expert model ensembling, majority voting, and reinforcement
-                learning with human feedback (RLHF).</p>
-            </li>
-
-            <li class="timeline-item-h">
-
-              <!-- <h4 class="h4 timeline-item-title">CodePath</h4> -->
-              <h5 class="h5 timeline-item-subtitle">GameSwap</h5>
-
-              <span>Feb 2024 - Apr 2024</span>
-
-              <p>Streamlined trading and selling of physical game copies by developing an iOS marketplace app using Swift and Google
-                Cloud Platform, featuring search, user profiles, detailed game listings, real-time chat, and a scalable backend with BigQuery
-                and Firebase.</p>
-            </li>
-
-            <li class="timeline-item-h">
-
-              <!-- <h4 class="h4 timeline-item-title">Lahore University of Management Sciences</h4> -->
-              <h5 class="h5 timeline-item-subtitle">Disaster Response Information System</h5>
-
-              <span>Sept 2020 - May 2021</span>
-
-              <p>Achieved a 92.3% F1-score in detecting COVID-19 fake news by leading a team of four to develop a machine learning model using Python and Google Cloud Platform. Integrated the model into a chatbot deployed on a disaster response website to reduce misinformation and provide real-time, accurate information to users during the pandemic.</p>
-            </li>
-           </ol> 
-
-        </section>
-
-      <section class ="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="ribbon"></ion-icon>
-          </div>
-
-          <h3 class="h3">Honors</h3>
-        </div>
-        <ol class="timeline-list">
-
-          <li class="timeline-item-h">Placed on Dean's Honor List for 2020-21</li>
-         </ol> 
-
-      </section>
-
-      <section class ="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="document-text"></ion-icon>
-          </div>
-
-          <h3 class="h3">Certificate</h3>
-        </div>
-        <ol class="timeline-list">
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">Production Machine Learning Systems</h5>
-
-            <span>August 2024</span>
-          </li>
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle"></h5>Machine Learning Operations (MLOps): Getting Started</h5>
-
-            <span>July 2024</span>
-          </li>
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">Feature Engineering</h5>
-
-            <span>July 2024</span>
-          </li>
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">Build, Train and Deploy ML Models with Keras on Google Cloud</h5>
-
-            <span>July 2024</span>
-          </li>
-          
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">Launching into Machine Learning</h5>
-
-            <span>July 2024</span>
-          </li>
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">How Google does Machine Learning</h5>
-
-            <span>July 2024</span>
-          </li>
-
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">Introduction to AI and Machine Learning on Google Cloud</h5>
-
-            <span>June 2024</span>
-          </li>
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">CodePath</h4>
-            <h5 class="h5 timeline-item-subtitle">Intro to iOS Development</h5>
-
-            <span>Feb 2024 - Apr 2024</span>
-          </li>
-
-          <li class="timeline-item-h">
-            <h4 class="h4 timeline-item-title">Google</h4>
-            <h5 class="h5 timeline-item-subtitle">Foundations: Data, Data, Everywhere</h5>
-
-            <span>June 2023</span>
-          </li>
-
-         </ol> 
-
-      </section>
-
-      <section class ="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="people"></ion-icon>
-          </div>
-
-          <h3 class="h3">Leadership & Extra-Curricular Activities</h3>
-        </div>
-
-        <ol class="timeline-list">
-
-          <li class="timeline-item-h">
-
-            <h4 class="h4 timeline-item-title">Lahore University of Management Sciences</h4>
-            <h5 class="h5 timeline-item-subtitle">Director, Space Observatory, SPADES</h5>
-
-            <span>Sept 2017 - Jun 2020</span>
-
-            <ul>
-              <li class = "timeline-sublist">Launched Atlas, a conference where 12 professors from across Pakistan held academic talks regarding astronomy</li>
-              <li class = "timeline-sublist">Introduced Zero Gravity, an astronomy event at Pakistan's most prominent science competition PSIFI, and managed over 1200 delegates from all over Pakistan</li>
-          </ul>
-          </li>
-           
-          <li class="timeline-item-h">
-
-            <h4 class="h4 timeline-item-title">The Citizen Foundation</h4>
-            <h5 class="h5 timeline-item-subtitle">Intern, Alumni Development Program</h5>
-
-            <span>Jun 2018 - Aug 2018</span>
-
-            <ul>
-              <li class = "timeline-sublist">Guided 23 TCF school graduates through elementary to intermediate Mathematics and English courses, facilitating the transition from Urdu to English medium education and supporting successful college admissions</li>
-          </ul>
-          </li>
-          
-         </ol> 
-
-      </section>
-
-       
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Science</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Artificial Intelligence</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>iOS Development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Science</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Artificial Intelligence</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-
-               <li class="select-item">
-                <button data-select-item>iOS Development</button>
-              </li>
-
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <!-- <li class="project-item  active" data-filter-item data-category="data science">
-              <a href="https://github.com/balajkhalid/spaceship-titanic">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/spaceship-titanic.jpeg" alt="spaceship-titanic" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Spaceship Titanic</h3>
-
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li> -->
-
-            <li class="project-item  active" data-filter-item data-category="data science">
-              <a href="https://github.com/balajkhalid/newyork-housing-market/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/new-york.jpeg" alt="newyork-housing-market" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">New York Housing Market</h3>
-
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="data science">
-              <a href="https://github.com/balajkhalid/earthquake_analysis/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/earthquake_analysis.jpeg" alt="earthquake_magnitude_prediction" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Earthquake Magnitude Prediction</h3>
-
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <!-- <li class="project-item  active" data-filter-item data-category="data science">
-              <a href="https://github.com/balajkhalid/cs567-project">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/home-credit-risk-modeling.jpg" alt="cs567-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Home Credit - Credit Risk Model Stability</h3>
-
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li> -->
-
-            <!-- <li class="project-item  active" data-filter-item data-category="artificial intelligence">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/placeholder-3.webp" alt="alpha-beta-pruning" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Alpha Beta Pruning</h3>
-
-                <p class="project-category">Artificial Intelligence</p>
-
-              </a>
-            </li> -->
-
-            <li class="project-item  active" data-filter-item data-category="ios development">
-              <a href="https://github.com/balajkhalid/codepath-ios101-projects/tree/main/Capstone%20Project">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/GameSwap.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">GameSwap</h3>
-
-                <p class="project-category">iOS Development</p>
-
-              </a>
-            </li>
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/placeholder-3.webp" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Othello</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li> -->
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://shophelw.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/helw.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Helw</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://runawaythirftstore.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/runwaythriftshop.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">The Runway Thrift Shop</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://gamekhelo.pk/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/gamekhelo.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Game Khelo</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@balajkhalid98/e-commerce-predict-sales-76be7da4d9af" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/e-commerce-sales-prediction.png" alt="E-Commerce Predict Sales" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Data Science</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">November 15, 2019</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">E-Commerce: Predict Sales</h3>
-
-                  <p class="blog-text">
-                    Predict Q4 sales for a online gift shop in UK.
-                  </p>
-
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            </nav>
+        </div>
+    </header>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@balaj.khalid/predicting-earthquake-magnitude-insights-from-28-years-of-seismic-data-a68a0645061f" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/earthquake_analysis.jpeg" alt="earthquake_magnitude_prediction" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Data Science</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Feburary 7, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Predicting Earthquake Magnitude</h3>
-
-                  <p class="blog-text">
-                    Insights from 28 Years of Seismic Data
-                  </p>
-
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Balaj Khalid</h1>
+                <h2>Data Scientist</h2>
+                <p>Transforming data into actionable insights</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <!-- <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248884.10211847026!2d-118.46339470437011!3d34.02016130102879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf9cca4a517!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd
-              "
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section> -->
-
-        <section class="contact-form">
-
-          <!-- <h3 class="h3 form-title">Get In Touch</h3> -->
-          
-          <p class = "about-text">I'm actively seeking new opportunities and would love to hear from you. Whether you're reaching out about a potential opportunity, have a question, or just want to say hello, please don't hesitate to contact me. I'm dedicated to responding promptly and am eager to connect with you!</p>
-
-          <button onclick="window.location.href='mailto:bkhalid@usc.edu'" class="form-btn" type="submit" data-form-btn>
-            <ion-icon name="paper-plane"></ion-icon>
-            <span>Send Message</span>
-          </button>
-
-          <!-- <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
+            <div class="hero-image">
+                <div class="profile-image"></div>
+            </div>
+        </div>
+    </section>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate Data Scientist with 3 years of experience in transforming complex datasets into valuable business insights. My expertise lies in machine learning, statistical analysis, and data visualization.</p>
+                    <p>I enjoy solving challenging problems and building models that help organizations make data-driven decisions. When I'm not coding or analyzing data, you can find me hiking, reading about the latest advancements in AI, or experimenting with new visualization techniques.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-text">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-text">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-text">Publications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">R</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+			<div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%;"></div>
+                            </div>
+                        </div>
 
-          </form> -->
+                        <div class="skill-item">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Deep Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Statistical Analysis</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">TensorFlow/PyTorch</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Pandas/NumPy</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Tableau/Power BI</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+		</div>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('/placeholder.svg?height=300&width=500')"></div>
+                    <div class="project-content">
+                        <h3>Exploring the use of LLMs in Social Media Bot Detection</h3>
+                        <p>Achieved 0.83 accuracy and 0.74 F1-score in bot detection on X (formerly Twitter) by developing an LLM-based classifier using Llama 3.1 and the Twibot-22 dataset, leveraging expert model ensembling, majority voting, and reinforcement learning with human feedback (RLHF).</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>Llama</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('/placeholder.svg?height=300&width=500')"></div>
+                    <div class="project-content">
+                        <h3>Artsy Web App</h3>
+                        <p>Developed a full-stack art discovery platform with React frontend and Node.js backend, integrated MongoDB for data storage; features include user authentication, artist search, and dynamic artwork listing. </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+				<span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('/placeholder.svg?height=300&width=500')"></div>
+                    <div class="project-content">
+                        <h3>Disaster Response Information System</h3>
+                        <p>Achieved a 92.3% F1-score in detecting COVID-19 fake news by leading a team of four to develop a machine learning model using Python and Google Cloud Platform. Integrated the model into a chatbot deployed on a disaster response website to reduce misinformation and provide real-time, accurate information to users during the pandemic.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Google Cloud Platform (GCP)</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+		<div class="project-card">
+                    <div class="project-image" style="background-image: url('/assets/images/GameSwap.png?height=300&width=500')"></div>
+                    <div class="project-content">
+                        <h3>Game Swap</h3>
+                        <p>Streamlined trading and selling of physical game copies by developing an iOS marketplace app using Swift and Google Cloud Platform, featuring search, user profiles, detailed game listings, real-time chat, and a scalable backend with  Frebase.</p>
+                        <div class="project-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>Google Cloud Platform (GCP)</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      </article>
+    <section id="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3>Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">May 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Data Science Intern</h4>
+                                <h5>Alcon Inc.</h5>
+                                <p>Collaborated with the team to support and enhance Alcon’s IOL Inventory Management System, contributing to a 40% optimization by identifying $18 million in unused inventory and improving stock efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">March 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h4>AI Researcher</h4>
+                                <h5>USC Center for Advanced Research Computing (CARC)</h5>
+                                <p>Developed predictive models for customer behavior analysis, created data pipelines, and collaborated with cross-functional teams.</p>
+                            </div>
+                        </div>
+<div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">March 2023 - December 2023</div>
+                            <div class="timeline-content">
+                                <h4>Data Scientist II</h4>
+<h5>Afiniti Ltd.</h5>
+<ul class="resume-list-indent">
+    <li>Reduced model deployment time by 30% and enhanced operational efficiency by designing and automating a full-cycle MLOps pipeline, including raw data ingestion, transformation, model training, deployment, and monitoring.</li>
+    <li>Enhanced productivity and efficiency by mentoring and leading a team of three in data analysis, predictive modeling, and production monitoring, fostering a high-performance culture.</li>
+    <li>Achieved a 9% reduction in customer churn and generated €2M in additional revenue for Telefonica Spain by optimizing churn prediction models with advanced gradient boosting techniques (XGBoost, LightGBM)</li>
+    <li>Increased data processing efficiency and contributed to €1M in incremental revenue by developing a real-time customer interaction tracking system using R, PostgreSQL, and automated ETL workflows with Talend. Developed predictive models for customer behavior analysis, created data pipelines, and collaborated with cross-functional teams</li>
+</ul>
+</div>
+                        </div>
+<div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">June 2021 - Feburary 2023</div>
+                            <div class="timeline-content">
+                                <h4>Data Scientist I</h4>
+                                <h5>Afiniti Ltd.</h5>
+                                <ul class="resume-list-indent">
+    <li>Generated €9.7M in additional revenue by successfully onboarding Telefonica Spain as a strategic client and designing real-time predictive modeling to optimize agent-caller pairing.</li>
+    <li>Increased model interpretability and predictive accuracy, leading to $0.8M in additional annual revenue, by engineering domain-specific ML features tailored to business needs.</li>
+    <li>Saved $0.5M in revenue by developing a real-time production monitoring and data integrity dashboard using Apache Superset, enabling proactive anomaly detection and preventing costly errors.</li>
+    </ul>
 
-    </div>
+                            </div>
+                        </div>
 
-  </main>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Expected Graduation: December 2025</div>
+                            <div class="timeline-content">
+                                <h4>Master of Science in Computer Science</h4>
+                                <h5>University of Southern California</h5>
+                                <p>Relevant course work: Artificial Intelligence, Machine Learning, NLP, Databases, Web Technologies, and Algorithms.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">September 2017 - May 2021</div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Science in Computer Science</h4>
+                                <h5>Lahore University of Management Sciences</h5>
+                                <p>Relevant course work: Data Science, Artificial Intelligence, Machine Learning, Data Structures and Algorithms, Probability, Statistics, Linear Algebra, and Calculus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <a href="#" class="btn primary-btn">Download Full Resume <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>bkhalid@usc.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (323) 220-3691</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Los Angeles, CA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/balaj-khalid" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/balajkhalid" class="social-link"><i class="fab fa-github"></i></a>
+                        <!-- 
+			<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-kaggle"></i></a>
+			-->
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Balaj Khalid. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
-
 </html>
